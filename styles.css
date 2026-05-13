@@ -525,6 +525,23 @@ p:last-child { margin-bottom: 0; }
 }
 .col-text .btn { margin-top: 12px; }
 
+.callout-note {
+  padding: 16px 20px;
+  background: var(--primary-50);
+  border-left: 3px solid var(--primary);
+  border-radius: 8px;
+  font-size: 15px;
+  color: var(--text);
+  margin: 22px 0 26px;
+  line-height: 1.6;
+}
+.callout-note strong {
+  display: inline;
+  color: var(--primary);
+  font-weight: 700;
+  margin-right: 4px;
+}
+
 /* Process steps */
 .process-steps {
   list-style: none;
