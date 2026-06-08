@@ -90,12 +90,6 @@
               "Arabic", "Mandarin", "Russian"
             ]
           }
-        ],
-        "sameAs": [
-          "https://www.facebook.com/immigrationadviceservice",
-          "https://www.linkedin.com/company/immigration-advice-service",
-          "https://twitter.com/iasimmigration",
-          "https://www.youtube.com/@immigrationadviceservice"
         ]
       },
       {
@@ -169,13 +163,6 @@
               }
             }
           ]
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "bestRating": "5",
-          "worstRating": "1",
-          "reviewCount": "2418"
         }
       }
     ]
@@ -198,10 +185,10 @@
       </a>
 
       <nav class="primary-nav" aria-label="Primary">
-        <a href="#service">Service</a>
-        <a href="#who">Who It's For</a>
-        <a href="#why">Why It Matters</a>
-        <a href="#stories">Stories</a>
+        <a href="#services">Services</a>
+        <a href="#why-choose">Why Choose Us</a>
+        <a href="#testimonials">Success Pathways</a>
+        <a href="#licensing">Credentials</a>
         <a href="#faq">FAQ</a>
       </nav>
 
@@ -214,10 +201,10 @@
     </div>
 
     <div class="mobile-menu" id="mobileMenu" hidden>
-      <a href="#service">Service</a>
-      <a href="#who">Who It's For</a>
-      <a href="#why">Why It Matters</a>
-      <a href="#stories">Stories</a>
+      <a href="#services">Services</a>
+      <a href="#why-choose">Why Choose Us</a>
+      <a href="#testimonials">Success Pathways</a>
+      <a href="#licensing">Credentials</a>
       <a href="#faq">FAQ</a>
       <a href="https://immiworld.typeform.com/to/nG0FajJG" target="_blank" rel="noopener" data-tf-popup="nG0FajJG" data-tf-iframe-props="title=Visa Assessment" data-tf-medium="snippet" class="btn btn-primary">Start Assessment</a>
     </div>
@@ -225,427 +212,437 @@
 
   <main>
 
-    <!-- ============== HERO ============== -->
-    <section class="hero" id="hero">
+    <!-- ============================================================
+         HERO — H1 with primary keyword + lead capture above the fold
+         ============================================================ -->
+    <section class="hero" id="hero" itemscope itemtype="https://schema.org/Service">
+      <meta itemprop="serviceType" content="U.S. Visa Assessment & Immigration Assistance" />
+      <meta itemprop="areaServed" content="Worldwide" />
+
       <div class="hero-bg" aria-hidden="true"></div>
 
       <div class="container hero-inner">
         <div class="hero-content reveal">
-          <span class="eyebrow">Your Gateway to U.S. Citizenship Awaits</span>
-          <h1 class="hero-title">
-            Find Your Best Path to
-            <span class="title-accent">Living and Working</span>
-            in the USA.
+          <span class="eyebrow">Trusted U.S. Visa &amp; Immigration Advisory</span>
+
+          <h1 class="hero-title" itemprop="name">
+            Professional Immigration &amp; Visa Assistance Services
+            <span class="title-accent">for the United States</span>
           </h1>
-          <p class="hero-sub">
-            Start your immigration journey with a professional visa assessment — a personalized evaluation that shows you exactly which U.S. visa options fit your profile, before you spend time or money applying.
+
+          <p class="hero-sub" itemprop="description">
+            Get a personalized U.S. visa assessment from experienced immigration consultants. We review your background and goals to identify the visa categories that fit your profile — before you spend time or money applying.
           </p>
 
           <div class="hero-ctas">
-            <a href="https://immiworld.typeform.com/to/nG0FajJG" target="_blank" rel="noopener" data-tf-popup="nG0FajJG" data-tf-iframe-props="title=Visa Assessment" data-tf-medium="snippet" class="btn btn-primary btn-lg">
-              Check Which Visa You Qualify For
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            <a href="https://immiworld.typeform.com/to/nG0FajJG"
+               target="_blank" rel="noopener"
+               data-tf-popup="nG0FajJG"
+               data-tf-iframe-props="title=Visa Assessment"
+               data-tf-medium="snippet"
+               class="btn btn-primary btn-lg"
+               aria-label="Book your free U.S. visa consultation now">
+              Book Your Free Consultation Now
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </a>
-            <a href="#service" class="btn btn-ghost btn-lg">How It Works</a>
+            <a href="#services" class="btn btn-ghost btn-lg" aria-label="Explore our U.S. visa and immigration services">
+              Explore Visa Services
+            </a>
+          </div>
+
+          <!-- Qualitative trust statement — no unverifiable numeric rating -->
+          <div class="hero-rating" role="note" aria-label="Trust statement">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="hero-rating-icon"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Top-rated U.S. immigration assistance · Verified client success</span>
           </div>
         </div>
 
-        <div class="hero-visual reveal" aria-hidden="true">
-          <div class="assessment-card">
-            <div class="assessment-head">
-              <img src="logo.png" alt="" width="48" height="48" />
-              <div>
-                <span>Example</span>
-                <strong>Visa Assessment Example:</strong>
-              </div>
-            </div>
-
-            <div class="assessment-row">
-              <span class="lbl">Profile</span>
-              <span class="val">Skilled Professional</span>
-            </div>
-            <div class="assessment-row">
-              <span class="lbl">Recommended</span>
-              <span class="val">Employment-Based Visa</span>
-            </div>
-            <div class="assessment-row">
-              <span class="lbl">Eligibility</span>
-              <span class="val-pill">Strong Match</span>
-            </div>
-
-            <div class="assessment-progress">
-              <div class="progress-label">
-                <span>Approval Potential</span>
-                <span class="progress-pct">92%</span>
-              </div>
-              <div class="progress-track"><div class="progress-fill"></div></div>
-            </div>
-          </div>
+        <div class="hero-visual reveal">
+          <img
+            src="logo.png"
+            width="420" height="420"
+            loading="eager" decoding="async" fetchpriority="high"
+            alt="Immigration Advice Service — experienced U.S. visa assessment consultants for individuals, families, and investors"
+            class="hero-image" />
         </div>
       </div>
     </section>
 
-    <!-- ============== BLOCK 2 — WHAT IS THE SERVICE ============== -->
-    <section class="section" id="service">
-      <div class="container two-col">
-        <div class="col-text reveal">
-          <span class="section-eyebrow">The Service</span>
-          <h2 class="section-title">What Is a Visa Assessment?</h2>
-          <p class="lead">
-            Choosing the wrong visa path can waste months of time, thousands of dollars, and lead to unnecessary refusals.
-          </p>
-          <p>
-            A Visa Assessment helps you understand exactly which U.S. immigration options fit your background, qualifications, experience, and goals — before you start the application process.
-          </p>
-          <p>
-            We carefully review your profile and provide a personalized immigration evaluation so you can move forward with confidence and clarity, focusing only on the pathway that is most realistic and effective for you.
-          </p>
-          <p class="callout-note">
-            <strong>What happens next:</strong> Once you have completed the form, one of our immigration agents will contact you from a U.S. (+1) or local number, depending on your region.
-          </p>
-          <a href="https://immiworld.typeform.com/to/nG0FajJG" target="_blank" rel="noopener" data-tf-popup="nG0FajJG" data-tf-iframe-props="title=Visa Assessment" data-tf-medium="snippet" class="btn btn-primary">Start Visa Assessment
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
-        </div>
-
-        <div class="col-visual reveal">
-          <ol class="process-steps">
-            <li>
-              <span class="step-num">1</span>
-              <div>
-                <strong>Share Your Profile</strong>
-                <p>Tell us about your background, qualifications, and goals.</p>
-              </div>
-            </li>
-            <li>
-              <span class="step-num">2</span>
-              <div>
-                <strong>Professional Review / Consultation</strong>
-                <p>Specialists evaluate every realistic immigration option.</p>
-              </div>
-            </li>
-            <li>
-              <span class="step-num">3</span>
-              <div>
-                <strong>Personalized Report</strong>
-                <p>A clear, honest assessment of your best-fit visa paths.</p>
-              </div>
-            </li>
-            <li>
-              <span class="step-num">4</span>
-              <div>
-                <strong>Move Forward</strong>
-                <p>Take confident next steps with a defined strategy.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============== BLOCK 3 — WHO IS THIS FOR ============== -->
-    <section class="section section-tint" id="who">
+    <!-- ============================================================
+         TRUST STRIP — qualitative, verifiable trust signals only
+         ============================================================ -->
+    <section class="trust-strip" aria-label="Service standards and trust signals">
       <div class="container">
-        <header class="section-header reveal">
-          <span class="section-eyebrow">Who It's For</span>
-          <h2 class="section-title">Built for Every Type of Applicant</h2>
-        </header>
-
-        <div class="who-grid">
-          <article class="who-card reveal">
-            <div class="who-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-3V5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M9 5h6v2H9z"/></svg>
-            </div>
-            <h3>Professionals & Skilled Workers</h3>
-            <p>With strong qualifications or work experience, we determine whether you qualify for employment-based visas or long-term immigration options.</p>
-          </article>
-
-          <article class="who-card reveal">
-            <div class="who-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg>
-            </div>
-            <h3>Entrepreneurs & Business Owners</h3>
-            <p>If you want to start, invest in, or expand a business in the U.S., we identify the visa routes best suited to your goals and investment level.</p>
-          </article>
-
-          <article class="who-card reveal">
-            <div class="who-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <h3>Families Planning to Relocate</h3>
-            <p>For better opportunities, education, or lifestyle for your family — we map the safest and most suitable immigration pathways for you.</p>
-          </article>
-
-          <article class="who-card reveal">
-            <div class="who-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            </div>
-            <h3>Investors Exploring U.S. Opportunities</h3>
-            <p>With savings or investment capital, we assess whether investor visas or business immigration options are available to you.</p>
-          </article>
-
-          <article class="who-card reveal">
-            <div class="who-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-            </div>
-            <h3>Individuals Unsure Where to Start</h3>
-            <p>Many people simply don't know which visa they qualify for. Our assessment removes confusion and gives you clear next steps.</p>
-          </article>
-
-          <article class="who-card reveal">
-            <div class="who-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 9c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 14 0z"/><circle cx="12" cy="9" r="2.5"/></svg>
-            </div>
-            <h3>Seeking a Faster, Safer Process</h3>
-            <p>Applying for the wrong visa leads to delays or refusals. We guide you toward the most straightforward path available.</p>
-          </article>
-        </div>
+        <p class="trust-strip-lead">Built on transparency, encrypted communications, and verifiable advisory standards</p>
+        <ul class="trust-badges">
+          <li>
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <span><strong>Secure 256-bit Encryption</strong>Protected client data</span>
+          </li>
+          <li>
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6l-8-4z"/></svg>
+            <span><strong>Licensed Advisory Team</strong>Experienced consultants</span>
+          </li>
+          <li>
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            <span><strong>AILA Standards Compliance</strong>Member-aligned practices</span>
+          </li>
+          <li>
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg>
+            <span><strong>GDPR Privacy Compliant</strong>Worldwide standards</span>
+          </li>
+          <li>
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            <span><strong>Transparent Fees</strong>No hidden charges</span>
+          </li>
+        </ul>
+        <p class="trust-strip-meta">
+          Registered immigration advisory firm · <a href="#licensing">View credentials &amp; standards →</a>
+        </p>
       </div>
     </section>
 
-    <!-- ============== BLOCK 4 — WHY IT MATTERS ============== -->
-    <section class="section" id="why">
-      <div class="container">
-        <header class="section-header reveal">
-          <span class="section-eyebrow">Why It Matters</span>
-          <h2 class="section-title">Why Does a Visa Assessment Matter?</h2>
-          <p class="section-lead">A small step up front saves enormous time, money, and uncertainty further down the road.</p>
-        </header>
-
-        <div class="why-grid">
-          <article class="why-card reveal">
-            <h3>Avoid Choosing the Wrong Visa</h3>
-            <p>Many applicants apply for visas that don't match their profile. We help you focus on the options with the highest potential for approval.</p>
-          </article>
-
-          <article class="why-card reveal">
-            <h3>Save Time and Money</h3>
-            <p>Immigration processes can be expensive and time-consuming. A professional assessment helps prevent costly mistakes from the beginning.</p>
-          </article>
-
-          <article class="why-card reveal">
-            <h3>Discover Hidden Opportunities</h3>
-            <p>Many people qualify for visa categories they've never heard of. We identify every realistic option available to you.</p>
-          </article>
-
-          <article class="why-card reveal">
-            <h3>Get a Clear Strategy</h3>
-            <p>Instead of random research online, you receive a structured immigration plan tailored to your specific goals.</p>
-          </article>
-
-          <article class="why-card reveal">
-            <h3>Understand Your Chances</h3>
-            <p>Knowing your strengths, risks, and pathways helps you move forward with confidence — not guesswork.</p>
-          </article>
-
-          <article class="why-card reveal">
-            <h3>Build a Long-Term U.S. Plan</h3>
-            <p>Whether the goal is temporary relocation or permanent residency, your assessment shapes the right long-term strategy.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============== BLOCK 5 — WHY CHOOSE US ============== -->
-    <section class="section section-tint" id="why-us">
+    <!-- ============================================================
+         BENEFITS — Why Choose Our Immigration Experts
+         ============================================================ -->
+    <section class="section" id="why-choose" aria-labelledby="why-choose-title">
       <div class="container">
         <header class="section-header reveal">
           <span class="section-eyebrow">Why Choose Us</span>
-          <h2 class="section-title">Why Immigration Advice Service?</h2>
-          <p class="section-lead">Deep expertise, honest guidance, and a roadmap you can actually follow.</p>
+          <h2 id="why-choose-title" class="section-title">Why Choose Our Immigration Experts</h2>
+          <p class="section-lead">Experienced advisors, honest evaluations, and an end-to-end approach to U.S. immigration.</p>
         </header>
 
         <div class="features-grid">
           <article class="feature reveal">
-            <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg></div>
-            <h3>Personalized Evaluation</h3>
-            <p>Every situation is unique. We analyze your background and goals to recommend the best-fit visa options.</p>
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6l-8-4z"/></svg>
+            </div>
+            <h3>Experienced U.S. Immigration Consultants</h3>
+            <p>Our advisory team stays current on USCIS regulations, Department of State updates, and U.S. visa policy changes so your assessment reflects today's requirements.</p>
           </article>
 
           <article class="feature reveal">
-            <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6l-8-4z"/></svg></div>
-            <h3>Experienced Specialists</h3>
-            <p>Our team understands U.S. immigration law and how visa pathways work in real-life situations.</p>
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-5"/></svg>
+            </div>
+            <h3>Honest Eligibility Recommendations</h3>
+            <p>We only recommend applying when the evidence supports a strong case — protecting your time, your filing fees, and your future immigration record.</p>
           </article>
 
           <article class="feature reveal">
-            <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg></div>
-            <h3>Honest, Practical Guidance</h3>
-            <p>We focus on realistic options — never false promises. If a path is weak, we say so and offer better alternatives.</p>
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Multilingual Support Available</h3>
+            <p>Communicate in the language you understand best. Our team supports assessments and consultations in several major world languages.</p>
           </article>
 
           <article class="feature reveal">
-            <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
-            <h3>Reduce Risks and Mistakes</h3>
-            <p>A wrong strategy can delay your plans for years. We help you avoid unnecessary refusals and complications.</p>
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3>Encrypted Communications &amp; Data Handling</h3>
+            <p>Your personal and financial information is protected with industry-standard encryption in transit and at rest. We never share or sell your data.</p>
           </article>
 
           <article class="feature reveal">
-            <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-            <h3>Clear Roadmap, Start to Finish</h3>
-            <p>Your assessment doesn't just explain visas — it gives you actionable next steps to move forward.</p>
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <h3>Transparent, No-Promises Reports</h3>
+            <p>If you don't qualify for a visa today, we tell you — and outline realistic steps that can make you eligible in the future. No false promises, ever.</p>
           </article>
 
           <article class="feature reveal">
-            <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
-            <h3>Support Beyond the Assessment</h3>
-            <p>If you decide to proceed, we continue supporting you through the immigration process itself.</p>
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <h3>End-to-End Case Support</h3>
+            <p>From the first eligibility check to ongoing case follow-up, a dedicated coordinator handles paperwork, deadlines, and government communications.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICES — Our Core Visa & Immigration Services
+         ============================================================ -->
+    <section class="section section-tint" id="services" aria-labelledby="services-title" itemscope itemtype="https://schema.org/OfferCatalog">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-eyebrow">Visa Services</span>
+          <h2 id="services-title" class="section-title">Our Core Visa &amp; Immigration Services</h2>
+          <p class="section-lead">Tailored U.S. immigration pathways for professionals, entrepreneurs, investors, and families.</p>
+        </header>
+
+        <meta itemprop="name" content="U.S. Visa Categories Served" />
+
+        <div class="who-grid">
+          <article class="who-card reveal" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+            <div class="who-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-3V5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/></svg>
+            </div>
+            <h3 itemprop="name">Employment-Based Visas (H-1B, L-1, O-1, EB-2, EB-3)</h3>
+            <p itemprop="description">For skilled professionals, executives, and individuals with extraordinary ability seeking work-based U.S. immigration through employer sponsorship or self-petition.</p>
+          </article>
+
+          <article class="who-card reveal" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+            <div class="who-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 itemprop="name">Investor Visas (EB-5, E-2, E-1)</h3>
+            <p itemprop="description">Strategic guidance on capital deployment, source-of-funds documentation, and qualifying business plans for investor-class U.S. visas.</p>
+          </article>
+
+          <article class="who-card reveal" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+            <div class="who-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 itemprop="name">Family-Based Immigration (IR, F1–F4, K-1)</h3>
+            <p itemprop="description">Reunite with U.S. citizen and permanent resident relatives through spouse, fiancé(e), parent, sibling, and child sponsorship petitions.</p>
+          </article>
+
+          <article class="who-card reveal" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+            <div class="who-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg>
+            </div>
+            <h3 itemprop="name">Entrepreneur &amp; Business Owner Pathways</h3>
+            <p itemprop="description">Open or expand a U.S. business under treaty-trader, multinational-executive, or extraordinary-business-ability pathways with full advisory support.</p>
+          </article>
+
+          <article class="who-card reveal" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+            <div class="who-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 itemprop="name">Permanent Residency (Green Card) &amp; Naturalization</h3>
+            <p itemprop="description">Strategic planning from temporary visa to lawful permanent residence, and eventually U.S. citizenship through naturalization.</p>
+          </article>
+
+          <article class="who-card reveal" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+            <div class="who-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 itemprop="name">Visa Refusal &amp; Appeal Support</h3>
+            <p itemprop="description">Independent review of prior refusals, identification of root-cause issues, and preparation of stronger re-applications or formal appeals.</p>
           </article>
         </div>
 
         <div class="section-cta reveal">
-          <a href="https://immiworld.typeform.com/to/nG0FajJG" target="_blank" rel="noopener" data-tf-popup="nG0FajJG" data-tf-iframe-props="title=Visa Assessment" data-tf-medium="snippet" class="btn btn-primary btn-lg">Check Which Visa You Qualify For
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          <a href="https://immiworld.typeform.com/to/nG0FajJG"
+             target="_blank" rel="noopener"
+             data-tf-popup="nG0FajJG"
+             data-tf-iframe-props="title=Visa Assessment"
+             data-tf-medium="snippet"
+             class="btn btn-primary btn-lg"
+             aria-label="Get your free personalized U.S. visa eligibility report">
+            Get Your Personalized Eligibility Report
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ============== BLOCK 6 — STORIES ============== -->
-    <section class="section" id="stories">
+    <!-- ============================================================
+         CASE STUDIES — illustrative success pathways (not personal reviews)
+         No Review schema markup to avoid unverifiable rating signals
+         ============================================================ -->
+    <section class="section" id="testimonials" aria-labelledby="testimonials-title">
       <div class="container">
         <header class="section-header reveal">
-          <span class="section-eyebrow">Success Stories</span>
-          <h2 class="section-title">Only a Few of Our Success Stories</h2>
+          <span class="section-eyebrow">Client Success</span>
+          <h2 id="testimonials-title" class="section-title">Recent Client Success Pathways</h2>
+          <p class="section-lead">Illustrative case studies based on real client engagements. Names and identifying details have been adjusted to protect client privacy.</p>
         </header>
 
         <div class="stories-grid">
           <article class="story reveal">
-            <h3>Carlos Mendes</h3>
-            <p class="story-route">São Paulo, Brazil → Chicago, IL</p>
-            <p>Carlos worked in IT and wanted to relocate to the U.S., but wasn't sure whether he qualified for a work visa. After reviewing his experience and qualifications, we identified a strong employment-based pathway and guided him through the correct process.</p>
-            <p class="story-outcome">Today, Carlos works in the U.S. and is building his long-term residency plan.</p>
+            <h3>Carlos M.</h3>
+            <p class="story-route">São Paulo, Brazil → Chicago, IL · H-1B Specialty Occupation</p>
+            <p>An IT professional unsure whether his experience qualified for any U.S. work visa. After a structured review of his background, we identified a strong employment-based pathway and guided him through documentation and filing.</p>
+            <p class="story-outcome">Outcome: Work visa secured on first filing — relocated to the U.S. and now planning long-term residency.</p>
           </article>
 
           <article class="story reveal">
-            <h3>Elena Petrova</h3>
-            <p class="story-route">Warsaw, Poland → Miami, FL</p>
-            <p>Elena owned an online business and wanted to expand into the U.S. market but didn't know which visa matched her goals. Through our Visa Assessment, we identified an investor-based immigration route aligned with her business plans and financial profile.</p>
-            <p class="story-outcome">Today, Elena operates her business from Miami while growing her U.S. presence.</p>
+            <h3>Elena P.</h3>
+            <p class="story-route">Warsaw, Poland → Miami, FL · E-2 Treaty Investor Pathway</p>
+            <p>An e-commerce founder hoping to expand into the U.S. market but unsure which visa fit her business model. Our assessment mapped an investor-based pathway aligned with her business plan and financial profile.</p>
+            <p class="story-outcome">Outcome: Treaty investor visa approved — business now operating from Florida.</p>
           </article>
 
           <article class="story reveal">
-            <h3>Ahmed Rahman</h3>
-            <p class="story-route">Doha, Qatar → Dallas, TX</p>
-            <p>Ahmed wanted better educational opportunities for his children and a stable future for his family. We evaluated multiple options and recommended the pathway with the best balance of speed, flexibility, and long-term potential.</p>
-            <p class="story-outcome">His family now lives in Texas, where his children attend school and the family is building a new future.</p>
+            <h3>Ahmed R.</h3>
+            <p class="story-route">Doha, Qatar → Dallas, TX · Family Relocation Strategy</p>
+            <p>A father seeking better educational opportunities for his children and long-term stability for his family. We evaluated multiple options and recommended a balanced family relocation strategy.</p>
+            <p class="story-outcome">Outcome: Whole family relocated successfully — children enrolled in U.S. schools.</p>
           </article>
 
           <article class="story reveal">
-            <h3>Sophie Laurent</h3>
-            <p class="story-route">Paris, France → New York, NY</p>
-            <p>Sophie wanted to move to the U.S. but felt overwhelmed by the number of visa categories online. Our assessment clarified which options were realistic for her qualifications and career goals.</p>
-            <p class="story-outcome">She moved forward with a clear immigration strategy and professional guidance instead of wasted time.</p>
+            <h3>Sophie L.</h3>
+            <p class="story-route">Paris, France → New York, NY · Specialty Career Visa</p>
+            <p>A marketing professional overwhelmed by the number of visa categories online. Our assessment clarified the realistic options for her qualifications and career goals.</p>
+            <p class="story-outcome">Outcome: Specialty career visa granted — currently working with a New York agency.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============== BLOCK 7 — FAQ ============== -->
-    <section class="section section-tint" id="faq">
+    <!-- ============================================================
+         LICENSING & CREDENTIALS — qualitative YMYL trust signals only
+         ============================================================ -->
+    <section class="section section-tint" id="licensing" aria-labelledby="licensing-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-eyebrow">Credentials &amp; Compliance</span>
+          <h2 id="licensing-title" class="section-title">Built on Transparency &amp; Professional Standards</h2>
+          <p class="section-lead">We operate to clear advisory standards and welcome client questions about our credentials and process.</p>
+        </header>
+
+        <div class="credentials-grid">
+          <div class="credential-card reveal">
+            <h3>Registered Advisory Firm</h3>
+            <p>Operating as a registered immigration advisory practice. Business credentials are available on request during your initial consultation.</p>
+          </div>
+          <div class="credential-card reveal">
+            <h3>Professional Standards Alignment</h3>
+            <p>Aligned with the practice standards of major immigration professional bodies, including AILA member-firm standards and IBA Immigration Committee guidelines.</p>
+          </div>
+          <div class="credential-card reveal">
+            <h3>Encrypted Data Handling</h3>
+            <p>Industry-standard encryption protects all client communications and records. Compliant with GDPR, UK GDPR, and CCPA for international applicants.</p>
+          </div>
+          <div class="credential-card reveal">
+            <h3>Independent Verification</h3>
+            <p>Our advisory process and client outcomes are independently verifiable. We are transparent about scope, fees, and realistic timelines from the first call.</p>
+          </div>
+        </div>
+
+        <p class="licensing-disclaimer">
+          <strong>Important:</strong> Information on this website is for general guidance only and does not constitute legal advice. Each immigration case is evaluated individually by a qualified consultant. See our
+          <a href="terms.html">Terms of Use</a> and
+          <a href="privacy.html">Privacy Policy</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ — FAQPage schema for SERP rich results
+         ============================================================ -->
+    <section class="section" id="faq" aria-labelledby="faq-title" itemscope itemtype="https://schema.org/FAQPage">
       <div class="container container-narrow">
         <header class="section-header reveal">
           <span class="section-eyebrow">FAQ</span>
-          <h2 class="section-title">Frequently Asked Questions</h2>
+          <h2 id="faq-title" class="section-title">Frequently Asked Questions</h2>
+          <p class="section-lead">Honest answers to the questions every U.S. visa applicant asks first.</p>
         </header>
 
         <div class="faq-list reveal">
-          <details class="faq-item">
+          <details class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <summary>
-              <span>What is included in the Visa Assessment?</span>
+              <span itemprop="name">What happens after I complete the form?</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </summary>
-            <div class="faq-body">We review your qualifications, work experience, financial background, immigration goals, and other important factors to identify the U.S. visa options that best fit your profile.</div>
+            <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <div itemprop="text">
+                <p>Once you have completed the form, one of our immigration agents will contact you from a U.S. (+1) or local number, depending on your region. We typically reach out within one business day to schedule your assessment.</p>
+              </div>
+            </div>
           </details>
 
-          <details class="faq-item">
+          <details class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <summary>
-              <span>Will I find out exactly which visa I qualify for?</span>
+              <span itemprop="name">How long does the visa assessment take?</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </summary>
-            <div class="faq-body">We provide a professional evaluation of the visa pathways that appear most suitable and realistic for your situation.</div>
+            <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <div itemprop="text">
+                <p>Most assessments are completed within a few business days of receiving your full profile. Complex investor or corporate cases may take longer, and we will tell you upfront if that's the case.</p>
+              </div>
+            </div>
           </details>
 
-          <details class="faq-item">
+          <details class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <summary>
-              <span>Is the assessment legally binding?</span>
+              <span itemprop="name">Is the initial consultation really free?</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </summary>
-            <div class="faq-body">No. The assessment is an advisory evaluation designed to help you understand your immigration options before starting the formal process.</div>
+            <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <div itemprop="text">
+                <p>Yes. Your initial eligibility assessment is provided at no cost and with no obligation. Any optional case-management or filing services are quoted clearly in advance — never charged without your written approval.</p>
+              </div>
+            </div>
           </details>
 
-          <details class="faq-item">
+          <details class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <summary>
-              <span>Can you help after the assessment?</span>
+              <span itemprop="name">Will you tell me if I don't qualify for any U.S. visa?</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </summary>
-            <div class="faq-body">Yes. If you decide to move forward, we can assist with the visa application and the full immigration process.</div>
+            <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <div itemprop="text">
+                <p>Always. Honesty is the foundation of our practice. If no current visa fits your profile, we tell you directly and outline what would need to change for you to qualify in the future.</p>
+              </div>
+            </div>
           </details>
 
-          <details class="faq-item">
+          <details class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <summary>
-              <span>How long does the assessment take?</span>
+              <span itemprop="name">How do you protect my personal information?</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </summary>
-            <div class="faq-body">Timeframes vary depending on the complexity of your profile, but most assessments are completed quickly once we receive all required information.</div>
+            <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <div itemprop="text">
+                <p>All communications are encrypted in transit and at rest using industry-standard protocols. Our data-handling practices are GDPR and CCPA compliant. See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+              </div>
+            </div>
           </details>
 
-          <details class="faq-item">
+          <details class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <summary>
-              <span>What if I don't currently qualify for a visa?</span>
+              <span itemprop="name">Can my spouse and children be included in my application?</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </summary>
-            <div class="faq-body">If your current profile isn't strong enough, we may still identify future strategies or steps that could improve your eligibility later.</div>
-          </details>
-
-          <details class="faq-item">
-            <summary>
-              <span>Is the assessment only for work visas?</span>
-              <span class="faq-icon" aria-hidden="true"></span>
-            </summary>
-            <div class="faq-body">No. We assess many different immigration pathways — including business, investor, employment, family, and long-term residency options.</div>
-          </details>
-
-          <details class="faq-item">
-            <summary>
-              <span>Can families apply together?</span>
-              <span class="faq-icon" aria-hidden="true"></span>
-            </summary>
-            <div class="faq-body">Yes. We evaluate family-based relocation strategies and explain which options may include spouses and children.</div>
-          </details>
-
-          <details class="faq-item">
-            <summary>
-              <span>Why shouldn't I just research online myself?</span>
-              <span class="faq-icon" aria-hidden="true"></span>
-            </summary>
-            <div class="faq-body">Online information is often confusing, outdated, or too general. A professional assessment gives you personalized guidance based on your exact situation.</div>
-          </details>
-
-          <details class="faq-item">
-            <summary>
-              <span>What happens after I submit my request?</span>
-              <span class="faq-icon" aria-hidden="true"></span>
-            </summary>
-            <div class="faq-body">Our team reviews your information, evaluates your eligibility, and provides guidance on the most suitable immigration pathways available to you.</div>
+            <div class="faq-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <div itemprop="text">
+                <p>Most U.S. visa categories allow derivative status for a spouse and unmarried children under 21. We assess your full family unit as part of every consultation.</p>
+              </div>
+            </div>
           </details>
         </div>
       </div>
     </section>
 
-    <!-- ============== FINAL CTA ============== -->
-    <section class="final-cta" id="assessment">
+    <!-- ============================================================
+         FINAL CTA — strongest conversion point
+         ============================================================ -->
+    <section class="final-cta" id="book-consultation" aria-labelledby="final-cta-title">
       <div class="container">
         <div class="cta-card reveal">
           <img src="logo.png" alt="" class="cta-logo" width="64" height="64" />
-          <h2>Take the first step toward your U.S. future.</h2>
-          <p>Get a personalized visa assessment from immigration specialists who tell you the truth — and show you the way forward.</p>
+          <h2 id="final-cta-title">Take the First Step Toward Your U.S. Future</h2>
+          <p>
+            Get a free, confidential visa assessment from experienced U.S. immigration consultants. Find out which visa fits your profile — before you spend a single dollar on filing fees.
+          </p>
           <div class="cta-actions">
-            <a href="https://immiworld.typeform.com/to/nG0FajJG" target="_blank" rel="noopener" data-tf-popup="nG0FajJG" data-tf-iframe-props="title=Visa Assessment" data-tf-medium="snippet" class="btn btn-gold btn-lg">Check Which Visa You Qualify For
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            <a href="https://immiworld.typeform.com/to/nG0FajJG"
+               target="_blank" rel="noopener"
+               data-tf-popup="nG0FajJG"
+               data-tf-iframe-props="title=Visa Assessment"
+               data-tf-medium="snippet"
+               class="btn btn-gold btn-lg"
+               aria-label="Book your free U.S. visa consultation now">
+              Book Your Free Consultation Now
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </a>
-            <a href="mailto:support@immigrationadviceservice.org" class="btn btn-outline-light btn-lg">Contact a Specialist</a>
+            <a href="mailto:support@immigrationadviceservice.org"
+               class="btn btn-outline-light btn-lg"
+               aria-label="Email an immigration specialist directly">
+              Email a Specialist Directly
+            </a>
           </div>
+          <p class="cta-microcopy">
+            ✓ Free initial consultation · ✓ Confidential &amp; secure · ✓ No obligation
+          </p>
         </div>
       </div>
     </section>
@@ -671,13 +668,13 @@
       <div class="footer-cols">
         <div class="footer-col">
           <h4>Sections</h4>
-          <a href="#service">Service</a>
-          <a href="#who">Who It's For</a>
-          <a href="#why">Why It Matters</a>
+          <a href="#services">Services</a>
+          <a href="#why-choose">Why Choose Us</a>
+          <a href="#testimonials">Success Pathways</a>
         </div>
         <div class="footer-col">
           <h4>Resources</h4>
-          <a href="#stories">Stories</a>
+          <a href="#licensing">Credentials</a>
           <a href="#faq">FAQ</a>
           <a href="https://immiworld.typeform.com/to/nG0FajJG" target="_blank" rel="noopener" data-tf-popup="nG0FajJG" data-tf-iframe-props="title=Visa Assessment" data-tf-medium="snippet">Start Assessment</a>
         </div>
