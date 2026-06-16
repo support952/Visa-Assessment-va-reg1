@@ -70,4 +70,45 @@
   // ---------- Footer year ----------
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // ---------- Typeform UTM / click-ID forwarding ----------
+  // Reads tracking params from the landing URL, persists across navigation
+  // via sessionStorage, and injects them into every Typeform popup trigger
+  // (data-tf-hidden) + appends them to the href fallback URL.
+  const TRACKING_PARAMS = [
+    'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content',
+    'gclid', 'gbraid', 'wbraid', 'fbclid', 'msclkid', 'ttclid', 'li_fat_id'
+  ];
+
+  const urlParams = new URLSearchParams(window.location.search);
+  let stored = {};
+  try { stored = JSON.parse(sessionStorage.getItem('tf_tracking') || '{}'); } catch (e) {}
+
+  let changed = false;
+  TRACKING_PARAMS.forEach((p) => {
+    const v = urlParams.get(p);
+    if (v && v !== stored[p]) { stored[p] = v; changed = true; }
+  });
+  if (changed) {
+    try { sessionStorage.setItem('tf_tracking', JSON.stringify(stored)); } catch (e) {}
+  }
+
+  const activeKeys = TRACKING_PARAMS.filter((p) => stored[p]);
+  if (activeKeys.length) {
+    const hiddenAttr = activeKeys
+      .map((p) => p + '=' + encodeURIComponent(stored[p]))
+      .join(',');
+
+    document.querySelectorAll('[data-tf-popup]').forEach((el) => {
+      // Inject into Typeform's hidden-fields mechanism (popup SDK)
+      el.setAttribute('data-tf-hidden', hiddenAttr);
+
+      // Also append to the href fallback so direct-open paths keep tracking
+      try {
+        const u = new URL(el.href);
+        activeKeys.forEach((k) => u.searchParams.set(k, stored[k]));
+        el.href = u.toString();
+      } catch (e) { /* non-URL href — skip */ }
+    });
+  }
 })();
